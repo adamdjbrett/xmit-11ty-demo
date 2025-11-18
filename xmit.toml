@@ -1,0 +1,13 @@
+# Enable serving of precompressed assets (.br and .gz)
+# XMIT will automatically serve .br (brotli) or .gz (gzip) if they exist
+# and the client supports the encoding
+precompressed = true
+
+[[redirects]]
+from = "^/batman"
+to = "https://xmit.000000076.xyz"
+
+[[redirects]]
+from = "^/superman/(.*)"
+to = "/$1"
+permanent = true
